@@ -149,6 +149,7 @@
                     console.log('SUCCESS!', response.status, response.text);
                     showPopup();
                     document.getElementById('subscriptionForm').reset();
+                    document.getElementById('formContainer').style.display = 'none';
                 }, function(error) {
                     console.log('FAILED...', error);
                 });
