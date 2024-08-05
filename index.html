@@ -47,6 +47,7 @@
             background-color: rgba(255, 255, 255, 0.8);
             padding: 10px;
             border-radius: 8px;
+            display: none; /* Ocultar el formulario inicialmente */
         }
         .form-container input[type="text"],
         .form-container input[type="email"] {
@@ -117,6 +118,7 @@
     <script>
         function showForm() {
             document.getElementById('formContainer').style.display = 'block';
+            document.querySelector('.subscribe-button').style.display = 'none'; // Ocultar el botón de suscribirse
         }
 
         function sendEmail(event) {
@@ -151,6 +153,7 @@
         function closePopup() {
             document.getElementById('overlay').style.display = 'none';
             document.getElementById('popup').style.display = 'none';
+            document.querySelector('.subscribe-button').style.display = 'block'; // Mostrar el botón de suscribirse nuevamente
         }
     </script>
 </body>
